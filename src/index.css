@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-900: #183e27;
+  --color-forest-800: #245C3A;
+  --color-forest-700: #2f6e46;
+  --color-forest-600: #3F7D4A;
+  --color-warm-cream: #FFF9EF;
+  --color-soft-beige: #F3EBDD;
+  --color-accent-gold: #D8A84E;
+  --color-accent-gold-dark: #b68528;
+  --color-store-text: #252A24;
+  --color-store-muted: #686E66;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar and smooth transitions */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+::selection {
+  background-color: #245C3A;
+  color: #FFF9EF;
+}
+
+/* Subtle image scale animation */
+.img-zoom {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .img-zoom {
+  transform: scale(1.06);
+}
